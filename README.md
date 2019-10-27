@@ -10,9 +10,9 @@ NOTE: In order to proceed this guide, prior DevOps knowledge of working with the
 * JSON
 
 NOTE: Before you start reading this guide, it is highly recommended to get familiar with production rule-based auto-scaling solutions. You need to know the following three Scaling Adjustment Types:
-ChangeInCapacity
-ExactCapacity
-PercentChangeInCapacity
+* ChangeInCapacity
+* ExactCapacity
+* PercentChangeInCapacity
 <br><br>
 To this end, this manuscript published in the Oxford University Press written by me is helpful:<br>
 `“Dynamic Multi-level Auto-scaling Rules for Containerized Applications”, The Computer Journal, Oxford University Press.`<br>
