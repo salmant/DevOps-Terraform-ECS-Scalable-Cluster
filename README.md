@@ -1,4 +1,4 @@
-# DevOps use case: A Terraform module used to configure and deploy an auto-scalable Amazon ECS (Elastic Container Service) cluster, as well as registering services at run-time.
+## DevOps use case: A Terraform module used to configure and deploy an auto-scalable Amazon ECS (Elastic Container Service) cluster, as well as registering services at run-time.
 
 NOTE: In order to proceed this guide, prior DevOps knowledge of working with the following technologies is highly required:
 
