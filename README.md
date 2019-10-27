@@ -96,7 +96,7 @@ resource "aws_subnet" "subnet_2" {
 }
 ```
 <br><br>
-The adjustment type for step scaling in aws_autoscaling_policy is defined as `ChangeInCapacity`. 
+The adjustment type for step scaling in `aws_autoscaling_policy` is defined as `ChangeInCapacity`. 
 It means that the auto-scaler increases or decreases the current capacity of the group by the specified number of instances. 
 A positive value for `scaling_adjustment_up_policy` increases the capacity and a negative value for `scaling_adjustment_down_policy` decreases the capacity. 
 For example, if the current capacity of the group is 3 instances and the adjustment is 1, then when this policy is performed, there is 1 instance added to the group for a total of 4 instances.
