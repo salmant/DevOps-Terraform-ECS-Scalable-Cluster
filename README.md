@@ -14,7 +14,6 @@ NOTE: Before you start reading this guide, it is highly recommended to get famil
 * ExactCapacity
 * PercentChangeInCapacity
 
-<br>
 To this end, this manuscript published in the Oxford University Press written by me is helpful:<br>
 `“Dynamic Multi-level Auto-scaling Rules for Containerized Applications”, The Computer Journal, Oxford University Press.`<br>
 https://doi.org/10.1093/comjnl/bxy043
