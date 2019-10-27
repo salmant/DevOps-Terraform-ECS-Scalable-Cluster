@@ -26,7 +26,7 @@ This repository is about how to setup a Terraform module used to provision a sca
 In other words, how to create a Terraform module to deploy an auto-scalable Amazon ECS cluster and register web services associated with it.
 Therefore, we are going to prepare Terraform recipes in order to manage AWS VPC (Virtual Private Cloud), create subnet, set up Internet gateway, deploy load balancer, run scalable container-based application and so on.
 <br><br>
-![Image](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/CW-Overview.png)
+![Image](https://github.com/salmant/DevOps-Terraform-ECS-Scalable-Cluster/blob/master/general-view.png)
 <br><br>
 Before you begin, make sure you have your own Terraform configuration management tool. 
 Moreover, we assume that you already have your credentials including the `--aws-access-key-id` and `--aws-secret-key` parameters of a user with IAM permissions for EC2 and ECS tasks.
@@ -35,7 +35,7 @@ It should be noted that Amazon uses public–key cryptography to encrypt and dec
 Threfore, we suppose that you have an existing key pair because to login to your instances, you need this key pair when you connect to the instances.
 Also you need to make sure that there is a value for the `region` and `availability_zone`.
 <br><br>
-Your `--aws-access-key-id`, `--aws-secret-key`, `ssh_key_name`, `region` and `availability_zone` should be specified in this file: variables.tf
+Your `--aws-access-key-id`, `--aws-secret-key`, `ssh_key_name`, `region` and `availability_zone` should be specified in this file: [variables.tf](https://github.com/salmant/DevOps-Terraform-ECS-Scalable-Cluster/blob/master/variables.tf) <br>
 
 ## Variables
 Input variables serve as parameters for the Terraform module, allowing aspects of the module to be customised without altering the source code written in the module. This allows the module to be easily shared between different configurations.
