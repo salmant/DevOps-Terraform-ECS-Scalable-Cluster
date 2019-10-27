@@ -112,7 +112,7 @@ If the deployment step is finished, there will be one machine initialised in the
 In the Amazon ECS console, choose section named `Clusters` on the navigation panel. The name of cluster should be `main`. 
 Now, you see the value of 1 as the number of `registered container instances` at first step. 
 It is also possible to find the public IP of machines in the cluster via different ways such as the Amazon EC2 console. 
-When this instance is in service, copy the public IP address and and paste it into the address field of an Internet-connected web browser such as http://X.Y.Z.W:80/index.html. If the instance is healthy, you see the default page of the server.
+When this instance is in service, copy the public IP address and and paste it into the address field of an Internet-connected web browser such as `http://X.Y.Z.W:80/index.html`. If the instance is healthy, you see the default page of the server.
 
 
 You can also ssh the instance and check the currently running Docker containers.
@@ -124,11 +124,11 @@ d354b2e371f2        nginx                            "nginx -g 'daemon of…"   
 0e597f472751        amazon/amazon-ecs-agent:latest   "/agent"                 2 minutes ago        Up 2 minutes                             ecs-agent
 ```
 
-For the troubleshooting purpose, do not forget to check the log files for the container agent and Docker via running the following commands:
-sudo cat /var/log/ecs/ecs-agent.log.YYYY-MM-DD-**
-sudo cat /var/log/docker
+For the troubleshooting purpose, do not forget to check the log files for the container agent and Docker via running the following commands:<br>
+`sudo cat /var/log/ecs/ecs-agent.log.YYYY-MM-DD-**`<br>
+`sudo cat /var/log/docker`
 <br><br>
 In order to verify the load balancer, open the Amazon EC2 console and choose section named `Load Balancers` on the navigation panel. The name of load balancer should be `web-service-elb`.
 After at least one of instances is in service, you can test the load balancer. Copy the string from DNS name (such as `web-service-elb-389921337.eu-west-2.elb.amazonaws.com`) and paste it into the address field of an Internet-connected web browser. 
-If the load balancer is working, you see the default page of the server. For example: http://web-service-elb-389921337.eu-west-2.elb.amazonaws.com:80/index.html
+If the load balancer is working, you see the default page of the server. For example: `http://web-service-elb-389921337.eu-west-2.elb.amazonaws.com:80/index.html`
 <br>
