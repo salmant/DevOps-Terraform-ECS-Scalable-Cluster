@@ -44,8 +44,8 @@ Other variables specified in `variables.tf` are as follows:
 * `instance_type`: The type of instance to start. The default value is `t2.micro`.
 * `ecs_cluster_name`: Name of the ECS cluster. The default value is `main`.
 * `cooldown_policy`: Seconds between auto scaling actions. The default value is `60`.
-* `scaling_adjustment_up_policy`: How many instances to scale up if a scaling up alarm is triggered`. The default value is `1`.
-* `scaling_adjustment_down_policy`: How many instances to scale down if a scaling down alarm is triggered`. The default value is `-1`.
+* `scaling_adjustment_up_policy`: How many instances to scale up if a scaling up alarm is triggered. The default value is `1`.
+* `scaling_adjustment_down_policy`: How many instances to scale down if a scaling down alarm is triggered. The default value is `-1`.
 * `metric_name_cloudwatch`: Scaling action is based on which monitoring metric. The default value is `CPUUtilization`.
 * `adjustment_type_policy`: Type for step scaling and simple scaling. It can be ChangeInCapacity, ExactCapacity or PercentChangeInCapacity. The default is `ChangeInCapacity`.
 * `alarm_up_scaling_threshold_cloudwatch`: Threshold to trigger an up scaling alarm. The default value is `80`.
@@ -54,7 +54,7 @@ Other variables specified in `variables.tf` are as follows:
 * `alarm_evaluation_periods_cloudwatch`: The number of periods over which monitoring data is investigated if specified thresholds are violated. The default value is `2`.
 * `autoscale_min_size`: Minimum size of the autoscale group that is the minimum number of EC2. The default value is `1`.
 * `autoscale_max_size`: Maximum size of the autoscale group that is the maximum number of EC2. The default value is `2`.
-* `autoscale_desired_size`: `Desired size of the autoscale group that is the desired number of EC2. The default value is `1`.
+* `autoscale_desired_size`: Desired size of the autoscale group that is the desired number of EC2. The default value is `1`.
 
 ## Some hints
 This module provides an auto-scaling method which horizontally adds container instance if an aggregated metric (e.g. average `CPUUtilization` of the cluster) reaches the predefined UP% threshold called `alarm_up_scaling_threshold_cloudwatch`, and removes container instance when it falls below the predetermined DOWN% threshold called `alarm_down_scaling_threshold_cloudwatch` for a default number of successive intervals, e.g. `alarm_evaluation_periods_cloudwatch` is set to 2 intervals. 
