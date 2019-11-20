@@ -26,7 +26,7 @@ resource "aws_route_table_association" "public_rt-main" {
 }
 
 /*
- * Create the VPC subnet_1
+ * Create the VPC subnet called subnet_1
  */
 resource "aws_subnet" "subnet_1" {
     vpc_id = "${aws_vpc.main.id}"
