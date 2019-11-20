@@ -32,8 +32,8 @@ Before you begin, make sure you have your own Terraform configuration management
 Moreover, we assume that you already have your credentials including the `--aws-access-key-id` and `--aws-secret-key` parameters of a user with IAM permissions for EC2 and ECS tasks.
 <br><br>
 It should be noted that Amazon uses public–key cryptography to encrypt and decrypt login information. This uses a public key to encrypt, and then the recipient uses the private key to decrypt. The public and private keys are known as a key pair.
-Threfore, we suppose that you have an existing key pair because to login to your instances, you need this key pair when you connect to the instances.
-Also you need to make sure that there is a value for the `region` and `availability_zone`.
+Threfore, we suppose that you have an existing key pair because in order to log into your instances, you need this key pair when you connect to the instances.
+Also you need to make sure that you have a value for variables called `region` and `availability_zone`.
 <br><br>
 Your `--aws-access-key-id`, `--aws-secret-key`, `ssh_key_name`, `region` and `availability_zone` should be specified in this file: [variables.tf](https://github.com/salmant/DevOps-Terraform-ECS-Scalable-Cluster/blob/master/variables.tf) <br>
 
