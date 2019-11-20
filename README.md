@@ -64,7 +64,7 @@ Here, I selected the small general-purpose instance type named `t2.micro` which 
 <br><br>
 VPC allows us to provision a private, isolated section of the AWS cloud where we are able to launch our required EC2 instances in a virtual network. 
 In the code, one VPC subnet named `subnet_1` is created. 
-If you would like to have more than one VPC subnet, the variable called availability_zone can have more than two values such as: 
+If you would like to have more than one VPC subnet, the variable called `availability_zone` can have more than two values such as: 
 
 ```
 variable "availability_zone" {
