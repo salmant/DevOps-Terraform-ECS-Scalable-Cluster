@@ -78,7 +78,7 @@ In this case, the code will be as follows:
 
 ```
 /*
- * Provide details about the VPC subnet_1
+ * Provide details about the VPC subnet called subnet_1
  */
 resource "aws_subnet" "subnet_1" {
   vpc_id                  = "${aws_vpc.main.id}"
@@ -87,7 +87,7 @@ resource "aws_subnet" "subnet_1" {
 }
 
 /*
- * Provide details about the VPC subnet_2
+ * Provide details about the VPC subnet called subnet_2
  */
 resource "aws_subnet" "subnet_2" {
   vpc_id                  = "${aws_vpc.main.id}"
