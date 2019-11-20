@@ -62,9 +62,9 @@ This module provides an auto-scaling method which horizontally adds container in
 Assigning a feasible value for the `instance_type` is important to avoid both under-provisioning and over-provisioning. It should be chosen based on requirements of the use case. 
 Here, I selected the small general-purpose instance type named `t2.micro` which has somehow minimal CPU and memory capacity.
 <br><br>
-In the code, one VPC named `subnet_1` is created. 
-VPC allows us to provision a private, isolated section of the AWS cloud where we are able to launch our required EC2 instance in a virtual network. 
-If you would like to have more than one VPC, the variable called availability_zone should have more than two values: 
+VPC allows us to provision a private, isolated section of the AWS cloud where we are able to launch our required EC2 instances in a virtual network. 
+In the code, one VPC subnet named `subnet_1` is created. 
+If you would like to have more than one VPC subnet, the variable called availability_zone can have more than two values such as: 
 
 ```
 variable "availability_zone" {
