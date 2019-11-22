@@ -86,7 +86,7 @@ variable "autoscale_min_size" {
 
 variable "autoscale_max_size" {
   description = "Maximum size of the autoscale group that is the maximum number of EC2"
-  default     = "2"
+  default     = "3"
 }
 
 variable "autoscale_desired_size" {
